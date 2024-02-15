@@ -48,3 +48,12 @@ body {
     height: 100px;
     margin: auto;
 }
+
+.links-list {
+    border: solid 3px;
+    max-width: 40%;
+}
+
+.links-footer {
+    list-style-type: square;
+}
