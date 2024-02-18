@@ -58,7 +58,5 @@ body {
   list-style-type: square;
   color: blueviolet;
   text-transform: lowercase;
-  text-wrap: nowrap;
-  list-style-type: square;
-  color: red;
+  font-size: 1.5em;
 }
