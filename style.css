@@ -59,4 +59,6 @@ body {
   color: blueviolet;
   text-transform: lowercase;
   text-wrap: nowrap;
+  list-style-type: square;
+  color: red;
 }
