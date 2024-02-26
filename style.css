@@ -54,9 +54,14 @@ body {
   max-width: 40%;
 }
 
+#logo-mega-mdf {
+  max-width: 150px;
+  margin: 0 2%;
+}
+
 .links-footer {
   list-style-type: square;
   color: blueviolet;
   text-transform: lowercase;
-  font-size: 1.5em;
+  font-size: 0.8em;
 }
