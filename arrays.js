@@ -59,4 +59,75 @@ console.log(listaEsparsa.length)  // Mostra quantos elementos existem dentro do 
 
 var aFazer = new Array(3)
 console.log(aFazer[15])
+console.log(aFazer)
 // -> undefined
+// -> [ <3 empty items> ]
+
+/*
+Para adicionar valores em um array basta informar o índice e o valor desejado:
+*/
+
+var carros = []
+carros[0] = 'Uno'
+carros[1] = 'Palio'
+console.log(carros)
+
+// -> [ 'Uno', 'Palio' ]
+
+// Outra forma de adicionar valores é usando o método _push()_. Os argumentos passados para esse método serão adicionados ao final do array:
+
+carros.push('Gol', 'Strada')
+console.log(carros)
+// -> [ 'Uno', 'Palio', 'Gol', 'Strada' ]
+
+/*
+O método unshift() pode ser usado para inserir um valor no início de um array, deslocando os elementos existentes no array para índices mais altos.
+*/
+
+carros.unshift('Tempra')
+console.log(carros)
+// -> [ 'Tempra', 'Uno', 'Palio', 'Gol', 'Strada' ]
+
+/*
+é possível excluir elementos do final de um array, simplesmente configurando a propriedade length com o novo comprimento desejado
+*/
+carros.length = 4
+console.log(carros)
+// -> [ 'Tempra', 'Uno', 'Palio', 'Gol' ]
+// O último elemento foi excluído para que o array fique no tamanho indicado (eram 5 elementos, agora 4)
+
+/*
+Os arrays têm um método pop() (ele funciona com push()) que reduz o comprimento de um array de 1, mas também retorna o valor do elemento excluído.
+Assim é possível criar uma variável com o último valor do array enquanto que esse valor é excluído do final do array.
+*/
+
+carros.push('Saveiro')
+console.log(carros)
+// -> [ 'Tempra', 'Uno', 'Palio', 'Gol', 'Saveiro' ]
+carros.pop()
+console.log(carros)
+// -> [ 'Tempra', 'Uno', 'Palio', 'Gol' ]
+
+/*
+Há o método shift() (que faz par com unshift()) removendo um elemento do início de um array.
+Todos os outros itens são deslocados para um índice menor.
+*/
+
+carros.shift()
+console.log(carros)
+// -> [ 'Uno', 'Palio', 'Gol' ]
+// Foi removido o primeiro item do array (índice 0)
+
+/*
+Outros métodos de array a serem estudados:
+* join()
+* reverse()
+* sort()
+* concat()
+* slice()
+* splice()
+* push() e pop()
+* unshift() e shift()
+* toString() e toLocaleString()
+* 
+*/
