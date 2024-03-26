@@ -131,3 +131,4 @@ Outros métodos de array a serem estudados:
 * toString() e toLocaleString()
 * 
 */
+console.log(typeof carros)
